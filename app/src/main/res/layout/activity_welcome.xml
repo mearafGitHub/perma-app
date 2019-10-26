@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".WelcomeActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bikeAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/growing" />
+
+        <TextView
+            android:id="@+id/permaText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Permaculture For Ethiopia"
+            android:layout_below="@id/bikeAnimationView"/>
+
+    <TextView
+        android:id="@+id/awesomeAfricaText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:text="by: Awesome Africa, Innovative Antidote"
+        android:layout_below="@id/permaText"/>
+
+    <Button
+        android:id="@+id/startLesson"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/permaText"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimary"
+        android:text="Start"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
+
